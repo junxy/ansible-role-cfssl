@@ -5,6 +5,9 @@ cfssl_version: "1.6.5"
 # Checksum file
 cfssl_checksum_url: "https://github.com/cloudflare/cfssl/releases/download/v{{ cfssl_version }}/cfssl_{{ cfssl_version }}_checksums.txt"
 
+# cfssl binaries download url
+cfssl_bin_download_url: "https://github.com/cloudflare/cfssl/releases/download/v{{ cfssl_version }}/{{ item }}_{{ cfssl_version }}_{{ cfssl_os }}_{{ cfssl_arch }}"
+
 # The directory where CFSSL binaries will be installed
 cfssl_bin_directory: "/usr/local/bin"
 
